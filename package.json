@@ -1,6 +1,6 @@
 {
     "name": "@hafdon/lib",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Package of lib functions. See `readme.md` for details.",
     "main": "index.js",
     "scripts": {
