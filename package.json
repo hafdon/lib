@@ -1,0 +1,53 @@
+{
+    "name": "@hafdon/lib",
+    "version": "1.0.0",
+    "description": "Package of lib functions. See `readme.md` for details.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Zachary Alec Weisser",
+    "license": "ISC",
+    "jshintConfig": {
+        "esversion": 9,
+        "asi": true,
+        "debug": true
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "trailingComma": "es5",
+        "semi": false,
+        "singleQuote": true
+    },
+    "eslintConfig": {
+        "parserOptions": {
+            "ecmaVersion": 2018,
+            "sourceType": "module"
+        },
+        "env": {
+            "browser": true,
+            "node": true
+        },
+        "extends": "eslint:recommended",
+        "rules": {}
+    },
+    "eslintIgnore": [
+        "**/out/*.js"
+    ],
+    "devDependencies": {
+        "eslint-config-recommended": "^4.0.0",
+        "eslint": "^5.16.0"
+    },
+    "dependencies": {
+        "fs-extra": "^8.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hafdon/lib.git"
+    },
+    "bugs": {
+        "url": "https://github.com/hafdon/lib/issues"
+    },
+    "homepage": "https://github.com/hafdon/lib#readme"
+}
