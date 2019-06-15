@@ -4,7 +4,8 @@
     "description": "Package of lib functions. See `readme.md` for details.",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "mocha",
+        "preversion": "npm test"
     },
     "keywords": [],
     "author": "Zachary Alec Weisser",
@@ -36,8 +37,10 @@
         "**/out/*.js"
     ],
     "devDependencies": {
+        "chai": "^4.2.0",
+        "eslint": "^5.16.0",
         "eslint-config-recommended": "^4.0.0",
-        "eslint": "^5.16.0"
+        "mocha": "^6.1.4"
     },
     "dependencies": {
         "fs-extra": "^8.0.1"
