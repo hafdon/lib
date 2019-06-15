@@ -1,12 +1,23 @@
+## installation
+
+`npm i @hafdon/lib`
+
 # exports
 
 ## `readfile`
 
-An async function that reads a file's contents
+An async function wrapper of `fs-extra` that reads a file's contents and returns a data object of type :
 
-## installation
+```javascript
+const DATATYPE = ['file:utf8']
 
-`npm i @hafdon/lib`
+const Package = {
+    error: Object, // Error() object
+    _error: Boolean, // true if Error() object attached
+    data: Object, // the file contents
+    datatype: String, // string of enum DATATYPE
+}
+```
 
 ## use like this:
 
