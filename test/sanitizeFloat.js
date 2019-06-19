@@ -24,7 +24,10 @@ describe('sanitizeFloat', () => {
     it('should return 0.45 for "0.45" ', () => {
         assert.equal(sanitizeFloat('0.45'), 0.45)
     })
-    it('should return 0.45 for "0.45" ', () => {
-        assert.equal(sanitizeFloat('0.45'), 0.45)
+    it('should return 0 for "a0.45" ', () => {
+        assert.equal(sanitizeFloat('a0.45'), 0)
+    })
+    it('should return NaN for sanitizeFloat("a0.45", NaN)', () => {
+        assert(isNaN(sanitizeFloat('a0.45', NaN)))
     })
 })

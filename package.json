@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "mocha --recursive --check-leaks",
+        "test:watch": "mocha --recursive --check-leaks --watch",
         "preversion": "npm test"
     },
     "keywords": [],

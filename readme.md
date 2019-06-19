@@ -19,7 +19,7 @@ const Package = {
 }
 ```
 
-## use like this:
+### use like this:
 
 ```javascript
 const { readfile } = require('@hafdon/lib')
@@ -39,3 +39,7 @@ async function main() {
 
 main()
 ```
+
+## `sanitizeFloat`
+
+## `sanitizeInt`
