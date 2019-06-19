@@ -26,6 +26,7 @@ async function readfile(filepath) {
         } catch (err) {
             log.extend('error')(err)
             pkg.error = new Error(err)
+            pkg.error_help = 'If (Error: ENOENT: no such file or directory), did you make sure to use the absolute file path?'
             pkg._error = true
         }
     }
