@@ -28,9 +28,11 @@ async function main() {
     const file = `${__dirname}/query1.sql`
     const package = await readfile(filename)
 
-    if (!package._error && package.datatype === 'file:utf-8') {
+    if (!package._error && package.datatype === 'file:utf8') {
         console.log(package.data)
     } else {
+        // throw the error (throw new Error(package.error)) if you want to
+        // but it fails silently by default
         console.log(package.error)
     }
 }

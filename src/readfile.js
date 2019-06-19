@@ -2,6 +2,8 @@
 const fs = require('fs-extra')
 const log = require('debug')('readfile')
 
+//const DATATYPE = ['file:utf8']
+
 const Package = {
     error: Object,
     _error: Boolean,
